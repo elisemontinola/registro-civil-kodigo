@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish Birth Registration Form - Non-Spanish Speaker Cheat Sheet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for better readability and PDF-like appearance */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            padding: 2rem 0;
+            line-height: 1.5;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            margin: 0 1rem;
+            box-sizing: border-box;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            border-bottom: 2px solid #bfdbfe;
+            padding-bottom: 0.5rem;
+        }
+        .subsection-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #3b82f6;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px dashed #93c5fd;
+            padding-bottom: 0.3rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group p {
+            margin-bottom: 0.25rem;
+            line-height: 1.3;
+        }
+        .form-group strong {
+            color: #334155;
+            font-weight: 500;
+        }
+        .english-translation {
+            color: #64748b; /* Slightly lighter color for English text */
+            font-size: 0.9em;
+            margin-left: 10px; /* Indent English translations */
+        }
+        .grid-layout {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+        @media (min-width: 640px) {
+            .grid-layout {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            .grid-layout.three-cols {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+        .full-width {
+            grid-column: span 1;
+        }
+        @media (min-width: 640px) {
+            .full-width-sm {
+                grid-column: span 2;
+            }
+            .full-width-sm.three-cols {
+                grid-column: span 3;
+            }
+        }
+        .notes {
+            background-color: #e0f2fe;
+            border-left: 5px solid #2196f3;
+            padding: 1rem 1.25rem;
+            margin-top: 2rem;
+            border-radius: 0.5rem;
+            color: #0c4a6e;
+        }
+        .notes p, .notes ul {
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+        .notes ul {
+            list-style-type: disc;
+            margin-left: 1.25rem;
+        }
+        .notes li {
+            margin-bottom: 0.25rem;
+        }
+        .form-footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #64748b;
+            text-align: right; /* Changed to right for "Continues on back..." */
+            border-bottom: 1px solid #cbd5e1; /* Added border to mimic original form */
+            padding-bottom: 0.5rem; /* Padding for the border */
+        }
+        .instruction-section {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 2px dashed #bfdbfe;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container" id="formContainer">
+        <header class="text-center mb-6">
+            <h1 class="text-lg font-bold text-gray-800">SERVICIO CONSULAR DE ESPAÑA</h1>
+            <p class="english-translation">SPANISH CONSULAR SERVICE</p>
+            <h2 class="text-xl font-extrabold text-blue-700 mt-2">REGISTRO CIVIL CONSULAR DE ESPAÑA EN</h2>
+            <p class="english-translation">CONSULAR CIVIL REGISTRY OF SPAIN IN</p>
+            <h3 class="text-3xl font-black text-gray-900 mt-4">REGISTRO CIVIL</h3>
+            <p class="english-translation">CIVIL REGISTRY</p>
+        </header>
+
+        <section class="mb-8">
+            <p class="text-lg font-semibold text-center mb-4">Sección I. NACIMIENTOS</p>
+            <p class="english-translation text-center">Section I. BIRTHS</p>
+            <p class="text-xl font-bold text-center text-blue-600">(Declaración de datos para la inscripción)</p>
+            <p class="english-translation text-center">(Declaration of data for registration)</p>
+            <p class="text-sm italic text-center mt-4 text-red-600">Nota importante: Antes de cumplimentar ver instrucciones al dorso.</p>
+            <p class="english-translation text-center">Important note: Before filling out, see instructions on the back (below).</p>
+        </section>
+
+        <section id="birth-data-section">
+            <div class="subsection-title">DATOS DEL NACIDO</div>
+            <p class="english-translation">BIRTH DATA</p>
+            <div class="grid-layout">
+                <div class="form-group">
+                    <p><strong>Nombre (1):</strong> Primer(os) Nombre(s)</p>
+                    <p class="english-translation"><strong>Name (1):</strong> First Name(s)</p>
+                </div>
+                <div class="form-group">
+                    <p><strong>Primer Apellido:</strong> Apellido del padre o primer apellido</p>
+                    <p class="english-translation"><strong>First Surname:</strong> Father's or first surname</p>
+                </div>
+                <div class="form-group">
+                    <p><strong>Segundo Apellido (2):</strong> Apellido de la madre o segundo apellido</p>
+                    <p class="english-translation"><strong>Second Surname (2):</strong> Mother's or second surname</p>
+                </div>
+                <div class="form-group">
+                    <p><strong>Sexo:</strong> Masculino / Femenino / Otro</p>
+                    <p class="english-translation"><strong>Sex:</strong> Male / Female / Other</p>
+                </div>
+            </div>
+
+            <div class="subsection-title">DATOS DEL NACIMIENTO</div>
+            <p class="english-translation">BIRTH DETAILS</p>
+            <div class="grid-layout three-cols">
+                <div class="form-group">
+                    <p><strong>Hora:</strong> HH:MM (Ej: 14:30)</p>
+                    <p class="english-translation"><strong>Hour:</strong> HH:MM (e.g., 02:30 PM)</p>
+                </div>
+                <div class="form-group">
+                    <p><strong>Día (3):</strong> Ej: 'Séptimo'</p>
+                    <p class="english-translation"><strong>Day (3):</strong> e.g., 'Seventh'</p>
+                </div>
+                <div class="form-group">
+                    <p><strong>Mes:</strong> Ej: 'Enero'</p>
+                    <p class="english-translation"><strong>Month:</strong> e.g., 'January'</p>
+                </div>
+                <div class="form-group full-width-sm three-cols">
+                    <p><strong>Año:</strong> Ej: 'Dos mil veinticuatro'</p>
+                    <p class="english-translation"><strong>Year:</strong> e.g., 'Two thousand and twenty-four'</p>
+                </div>
+                <div class="form-group full-width-sm three-cols">
+                    <p><strong>Lugar (4):</strong> Localidad, Distrito, Provincia, Estado (Ej: Madrid, Centro, Madrid, España)</p>
+                    <p class="english-translation"><strong>Place (4):</strong> Locality, District, Province, State (e.g., Madrid, Center, Madrid, Spain)</p>
+                </div>
+            </div>
+
+            <div class="grid-layout three-cols mt-4">
+                <div class="form-group full-width-sm three-cols">
+                    <p><strong>Inscrito con fecha:</strong> DD/MM/AAAA (Ej: 07/06/2025)</p>
+                    <p class="english-translation"><strong>Registered on (Date):</strong> DD/MM/YYYY (e.g., 06/07/2025)</p>
+                </div>
+                <div class="form-group full-width-sm three-cols">
+                    <p><strong>En el Registro local de:</strong> Nombre del Registro local (Ej: Madrid)</p>
+                    <p class="english-translation"><strong>In the Local Registry of:</strong> Local Registry Name (e.g., Madrid)</p>
+                </div>
+                <div class="form-group">
+                    <p><strong>En el Tomo:</strong> [Número del Tomo]</p>
+                    <p class="english-translation"><strong>In Volume:</strong> [Volume Number]</p>
+                </div>
+                <div class="form-group">
+                    <p><strong>Página:</strong> [Número de Página]</p>
+                    <p class="english-translation"><strong>Page:</strong> [Page Number]</p>
+                </div>
+                <div class="form-group">
+                    <p><strong>Núm.:</strong> [Número de Inscripción]</p>
+                    <p class="english-translation"><strong>No.:</strong> [Registration Number]</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="father-data-section">
+            <div class="subsection-title">DATOS DEL PADRE (5)</div>
+            <p class="english-translation">FATHER'S DATA (5)</p>
+            <div class="grid-layout">
+                <div class="form-group">
+                    <p><strong>Nombre:</strong> [Nombre del Padre]</p>
+                    <p class="english-translation"><strong>Name:</strong> [Father's Name]</p>
+                </div>
+                <div class="form-group">
+                    <p><strong>Primer Apellido:</strong> [Primer Apellido del Padre]</p>
+                    <p class="english-translation"><strong>First Surname:</strong> [Father's First Surname]</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Segundo Apellido:</strong> [Segundo Apellido del Padre]</p>
+                    <p class="english-translation"><strong>Second Surname:</strong> [Father's Second Surname]</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Hijo de:</strong> Nombre de la madre del padre y del padre del padre (Ej: María y Juan)</p>
+                    <p class="english-translation"><strong>Son of:</strong> Father's Mother's Name and Mother's Father's Name (e.g., Maria and Juan)</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Nacido en:</strong> [Lugar de Nacimiento del Padre] (Ej: Barcelona, España)</p>
+                    <p class="english-translation"><strong>Born in:</strong> [Father's Place of Birth] (e.g., Barcelona, Spain)</p>
+                </div>
+                <div class="form-group">
+                    <p><strong>El día:</strong> DD/MM/AAAA (Ej: 15/03/1980)</p>
+                    <p class="english-translation"><strong>On the day:</strong> DD/MM/YYYY (e.g., 03/15/1980)</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Estado civil al nacer el/la hijo/a:</strong> (Ej: Casado/a, Soltero/a)</p>
+                    <p class="english-translation"><strong>Civil status at the birth of the child:</strong> (e.g., Married, Single)</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Estado civil en el momento actual:</strong> (Ej: Casado/a, Soltero/a)</p>
+                    <p class="english-translation"><strong>Civil status at present:</strong> (e.g., Married, Single)</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Nacionalidad al nacer el/la hijo/a:</strong> (Ej: Española)</p>
+                    <p class="english-translation"><strong>Nationality at the birth of the child:</strong> (e.g., Spanish)</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Nacionalidad en el momento actual:</strong> (Ej: Española)</p>
+                    <p class="english-translation"><strong>Nationality at present:</strong> (e.g., Spanish)</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Domicilio:</strong> [Domicilio del Padre] (Ej: Calle Mayor 1, Madrid, España)</p>
+                    <p class="english-translation"><strong>Address:</strong> [Father's Address] (e.g., Calle Mayor 1, Madrid, Spain)</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>D. N. I.:</strong> [Número de DNI/Pasaporte]</p>
+                    <p class="english-translation"><strong>D.N.I. (National Identity Document):</strong> [DNI/Passport Number]</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="mother-data-section">
+            <div class="subsection-title">DATOS DE LA MADRE (5)</div>
+            <p class="english-translation">MOTHER'S DATA (5)</p>
+            <div class="grid-layout">
+                <div class="form-group">
+                    <p><strong>Nombre:</strong> [Nombre de la Madre]</p>
+                    <p class="english-translation"><strong>Name:</strong> [Mother's Name]</p>
+                </div>
+                <div class="form-group">
+                    <p><strong>Primer Apellido:</strong> [Primer Apellido de la Madre]</p>
+                    <p class="english-translation"><strong>First Surname:</strong> [Mother's First Surname]</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Segundo Apellido:</strong> [Segundo Apellido de la Madre]</p>
+                    <p class="english-translation"><strong>Second Surname:</strong> [Mother's Second Surname]</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Hija de:</strong> Nombre de la madre de la madre y del padre de la madre (Ej: Ana y Pedro)</p>
+                    <p class="english-translation"><strong>Daughter of:</strong> Mother's Mother's Name and Mother's Father's Name (e.g., Ana and Pedro)</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Nacida en:</strong> [Lugar de Nacimiento de la Madre] (Ej: Sevilla, España)</p>
+                    <p class="english-translation"><strong>Born in:</strong> [Mother's Place of Birth] (e.g., Seville, Spain)</p>
+                </div>
+                <div class="form-group">
+                    <p><strong>El día:</strong> DD/MM/AAAA (Ej: 20/07/1982)</p>
+                    <p class="english-translation"><strong>On the day:</strong> DD/MM/YYYY (e.g., 07/20/1982)</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Estado civil al nacer el/la hijo/a:</strong> (Ej: Casado/a, Soltero/a)</p>
+                    <p class="english-translation"><strong>Civil status at the birth of the child:</strong> (e.g., Married, Single)</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Estado civil en el momento actual:</strong> (Ej: Casado/a, Soltero/a)</p>
+                    <p class="english-translation"><strong>Civil status at present:</strong> (e.g., Married, Single)</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Nacionalidad al nacer el/la hijo/a:</strong> (Ej: Española)</p>
+                    <p class="english-translation"><strong>Nationality at the birth of the child:</strong> (e.g., Spanish)</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Nacionalidad en el momento actual:</strong> (Ej: Española)</p>
+                    <p class="english-translation"><strong>Nationality at present:</strong> (e.g., Spanish)</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Domicilio:</strong> [Domicilio de la Madre] (Ej: Calle Mayor 1, Madrid, España)</p>
+                    <p class="english-translation"><strong>Address:</strong> [Mother's Address] (e.g., Calle Mayor 1, Madrid, Spain)</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>D. N. I.:</strong> [Número de DNI/Pasaporte]</p>
+                    <p class="english-translation"><strong>D.N.I. (National Identity Document):</strong> [DNI/Passport Number]</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="form-footer">
+            Sigue al dorso.../
+            <p class="english-translation">Continues on back.../</p>
+        </div>
+
+        <section id="marriage-section" class="mt-8">
+            <div class="subsection-title">MATRIMONIO DE LOS PADRES (6)</div>
+            <p class="english-translation">PARENTS' MARRIAGE (6)</p>
+            <div class="grid-layout">
+                <div class="form-group full-width">
+                    <p><strong>Día de la celebración:</strong> DD/MM/AAAA (Ej: 10/05/2000)</p>
+                    <p class="english-translation"><strong>Day of celebration:</strong> DD/MM/YYYY (e.g., 05/10/2000)</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Lugar de celebración:</strong> [Lugar de Celebración del Matrimonio] (Ej: Ayuntamiento de Madrid)</p>
+                    <p class="english-translation"><strong>Place of celebration:</strong> [Place of Marriage Celebration] (e.g., City Hall of Madrid)</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Inscrito en:</strong> [Registro donde está inscrito el matrimonio]</p>
+                    <p class="english-translation"><strong>Registered in:</strong> [Registry where marriage is registered]</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Documento acreditativo presentado:</strong> [Tipo de documento] (Ej: Certificado de matrimonio)</p>
+                    <p class="english-translation"><strong>Supporting document presented:</strong> [Type of document] (e.g., Marriage certificate)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="observations-section">
+            <div class="subsection-title">OBSERVACIONES (7)</div>
+            <p class="english-translation">OBSERVATIONS (7)</p>
+            <div class="form-group">
+                <p>[Cualquier observación relevante, Ej: 'Parto gemelar: segundo gemelo']</p>
+                <p class="english-translation">[Enter any relevant observations here, e.g., 'Twin birth: second twin']</p>
+            </div>
+        </section>
+
+        <section id="declarant-section">
+            <div class="subsection-title">DECLARANTE (8)</div>
+            <p class="english-translation">DECLARANT (8)</p>
+            <div class="form-group">
+                <p><strong>D./Dª.:</strong> [Nombre completo del Declarante]</p>
+                <p class="english-translation"><strong>Mr./Ms.:</strong> [Declarant's Full Name]</p>
+            </div>
+            <div class="grid-layout">
+                <div class="form-group">
+                    <p><strong>En calidad de:</strong> Ej: Interesado, padre, madre, etc.</p>
+                    <p class="english-translation"><strong>In the capacity of:</strong> e.g., Interested party, father, mother, etc.</p>
+                </div>
+                <div class="form-group">
+                    <p><strong>Natural de:</strong> [Lugar de origen del Declarante] (Ej: Valencia)</p>
+                    <p class="english-translation"><strong>Native of:</strong> [Declarant's Place of Origin] (e.g., Valencia)</p>
+                </div>
+                <div class="form-group">
+                    <p><strong>Fecha de nacimiento:</strong> DD/MM/AAAA (Ej: 01/01/1975)</p>
+                    <p class="english-translation"><strong>Date of birth:</strong> DD/MM/YYYY (e.g., 01/01/1975)</p>
+                </div>
+                <div class="form-group">
+                    <p><strong>Lugar de nacimiento:</strong> [Lugar de Nacimiento del Declarante] (Ej: Valencia, España)</p>
+                    <p class="english-translation"><strong>Place of birth:</strong> [Declarant's Place of Birth] (e.g., Valencia, Spain)</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Domicilio:</strong> [Domicilio del Declarante] (Ej: Calle de la Paz 5, Valencia, España)</p>
+                    <p class="english-translation"><strong>Address:</strong> [Declarant's Address] (e.g., Calle de la Paz 5, Valencia, Spain)</p>
+                </div>
+                <div class="form-group">
+                    <p><strong>Teléfono:</strong> [Número de Teléfono] (Ej: +34 123 456 789)</p>
+                    <p class="english-translation"><strong>Telephone:</strong> [Phone Number] (e.g., +34 123 456 789)</p>
+                </div>
+                <div class="form-group">
+                    <p><strong>C. P.:</strong> [Código Postal] (Ej: 28001)</p>
+                    <p class="english-translation"><strong>C.P. (Postal Code):</strong> [Postal Code] (e.g., 28001)</p>
+                </div>
+                <div class="form-group full-width">
+                    <p><strong>Documento acreditativo:</strong> [Tipo de documento] (Ej: DNI, Pasaporte)</p>
+                    <p class="english-translation"><strong>Supporting document:</strong> [Type of document] (e.g., DNI, Passport)</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-between items-center mt-6">
+                <div class="form-group mb-4 sm:mb-0 w-full sm:w-1/2">
+                    <p><strong>En:</strong> [Ciudad de la Firma] (Ej: Madrid)</p>
+                    <p class="english-translation"><strong>In:</strong> [City of Signature] (e.g., Madrid)</p>
+                </div>
+                <div class="form-group w-full sm:w-1/2 flex justify-end items-center gap-2">
+                    <p><strong>A:</strong> DD/MM/AAAA (Ej: 07/06/2025)</p>
+                    <p class="english-translation"><strong>On:</strong> DD/MM/YYYY (e.g., 06/07/2025)</p>
+                </div>
+            </div>
+            <div class="form-group mt-4">
+                <p><strong>Firma del declarante (9):</strong></p>
+                <p class="english-translation"><strong>Declarant's signature (9):</strong></p>
+                <div class="signature-box" style="border: 1px solid #cbd5e1; min-height: 5rem; width: 100%; margin-top: 1rem; border-radius: 0.375rem; display: flex; align-items: center; justify-content: center; color: #64748b; font-style: italic;">
+                    <p>Firme aquí</p>
+                    <p class="english-translation">Sign here</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="instruction-section">
+            <h2 class="section-title">INSTRUCCIONES</h2>
+            <p class="english-translation">INSTRUCTIONS</p>
+            <div class="notes">
+                <p class="font-semibold text-lg mb-2">Cumplimentar a máquina o a mano con caracteres de imprenta.</p>
+                <p class="english-translation">Fill in by typewriter or by hand in block letters.</p>
+                <ul>
+                    <li><strong>(1) Nombre:</strong> Unicamente se podrán practicar inscripciones de nacimiento haciendo constar dos nombres simples (p. e., José Luis o uno compuesto, María del Carmen). Los nombres extranjeros que tengan traducción a cualquiera de las lenguas españolas deberán consignarse en la versión que elija quien haya de imponer el nombre (castellana, catalana, vasca, gallega, etc.).</li>
+                    <li class="english-translation"><strong>(1) Name:</strong> Only birth registrations stating two simple names (e.g., José Luis) or one compound name (e.g., María del Carmen) may be performed. Foreign names that have translation into any Spanish language must be entered in the version chosen by the person who is to impose the name (Castilian, Catalan, Basque, Galician, etc.).</li>
+                    <li><strong>(2) Apellidos:</strong> Las inscripciones de nacimiento habrán de practicarse haciendo constar dos apellidos, incluso aquellas inscripciones de personas extranjeras que hayan adquirido la nacionalidad española.</li>
+                    <li class="english-translation"><strong>(2) Surnames:</strong> Birth registrations must be carried out stating two surnames, including those registrations of foreign persons who have acquired Spanish nationality.</li>
+                    <li><strong>(3) Día:</strong> Consignar el dato en letra.</li>
+                    <li class="english-translation"><strong>(3) Day:</strong> Enter the data in letters (e.g., 'Seventh').</li>
+                    <li><strong>(4) Lugar:</strong> Indicar localidad, distrito, provincia y Estado.</li>
+                    <li class="english-translation"><strong>(4) Place:</strong> Indicate locality, district, province, and State.</li>
+                    <li><strong>(5) Datos de los Padres:</strong> En caso de tratarse de filiación no matrimonial, el progenitor que solicite la inscripción no manifestará el nombre del otro progenitor, a no ser que la filiación ya estuviera establecida respecto de éste, en cuyo caso deberá ser acreditada documentalmente. En el supuesto de filiación desconocida se harán constar nombres de padre y madre a los solos efectos identificadores.</li>
+                    <li class="english-translation"><strong>(5) Parent Data:</strong> In the case of non-marital filiation, the progenitor requesting the registration shall not state the name of the other progenitor, unless the filiation has already been established with respect to the latter, in which case it must be documented. In the case of unknown filiation, the names of the father and mother will be stated for identification purposes only.</li>
+                    <li><strong>(6) Matrimonio de los Padres:</strong> Indicar «Existe» o «No Existe».</li>
+                    <li class="english-translation"><strong>(6) Parents' Marriage:</strong> Indicate "Exists" or "Does Not Exist" if parents were married.</li>
+                    <li><strong>(7) Observaciones:</strong> En caso de parto múltiple se consignará el orden de nacimiento.</li>
+                    <li class="english-translation"><strong>(7) Observations:</strong> In case of multiple birth, the order of birth will be stated here.</li>
+                    <li><strong>(8) Declarante:</strong> Interesado, padre, madre, etc.</li>
+                    <li class="english-translation"><strong>(8) Declarant:</strong> This refers to the Interested party, father, mother, etc.</li>
+                    <li><strong>(9) Firma:</strong> Si no pudiere o no supiere firmar, lo harán a su ruego dos testigos, los cuales harán constar debajo de la firma, en caracteres bien legibles, su nombre, dos apellidos y domicilio.</li>
+                    <li class="english-translation"><strong>(9) Signature:</strong> If unable or unwilling to sign, two witnesses will do so at their request, who will state their name, two surnames, and address clearly legible below the signature.</li>
+                </ul>
+                <p class="mt-4 font-bold text-sm">
+                    NOTA: Se admite la presentación de títulos para la inscripción por terceras personas. No obstante el Registro Civil no está obligado a mantener correspondencia ni a informar a los mismos, salvo que estuvieran apoderados por escrito. En el supuesto de que se promueva la incoación del expediente, éste sólo puede ser instado por los propios interesados o por abogados o procuradores expresamente apoderados al efecto.
+                </p>
+                <p class="english-translation mt-1 text-sm">
+                    NOTE: The submission of titles for registration by third parties is permitted. However, the Civil Registry is not obliged to maintain correspondence or inform them, unless they are duly authorized in writing. In the Event that the initiation of the procedure is promoted, it can only be initiated by the interested parties themselves or by lawyers or attorneys expressly authorized for this purpose.
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
